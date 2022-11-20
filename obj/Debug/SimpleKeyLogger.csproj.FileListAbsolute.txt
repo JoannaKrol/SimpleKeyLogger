@@ -1,0 +1,7 @@
+C:\Users\remig\OneDrive\Pulpit\Asia GIT\SimpleKeyLogger\bin\Debug\SimpleKeyLogger.exe.config
+C:\Users\remig\OneDrive\Pulpit\Asia GIT\SimpleKeyLogger\bin\Debug\SimpleKeyLogger.exe
+C:\Users\remig\OneDrive\Pulpit\Asia GIT\SimpleKeyLogger\bin\Debug\SimpleKeyLogger.pdb
+C:\Users\remig\OneDrive\Pulpit\Asia GIT\SimpleKeyLogger\obj\Debug\SimpleKeyLogger.csproj.AssemblyReference.cache
+C:\Users\remig\OneDrive\Pulpit\Asia GIT\SimpleKeyLogger\obj\Debug\SimpleKeyLogger.csproj.CoreCompileInputs.cache
+C:\Users\remig\OneDrive\Pulpit\Asia GIT\SimpleKeyLogger\obj\Debug\SimpleKeyLogger.exe
+C:\Users\remig\OneDrive\Pulpit\Asia GIT\SimpleKeyLogger\obj\Debug\SimpleKeyLogger.pdb
