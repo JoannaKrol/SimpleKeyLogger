@@ -1,0 +1,14 @@
+{
+  "limit": 100,
+  "serverConfiguration": {
+    "hostSmtp": "smtp.gmail.com",
+    "enableSsl": true,
+    "port": 587
+  },
+  "senderConfiguration": {
+    "senderEmail": "",
+    "senderPassword": "",
+    "senderName": ""
+  },
+  "recipientEmail":  ""
+}
