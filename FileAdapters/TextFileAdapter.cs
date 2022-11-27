@@ -9,8 +9,7 @@ namespace SimpleKeyLogger.FileAdapters
 {
     public class TextFileAdapter : FileAdapter
     {
-        public StreamWriter streamWriter;
-       public TextFileAdapter(string fileName, string filePath): base(fileName, filePath, "txt")
+        public TextFileAdapter(string fileName, string filePath): base(fileName, filePath, "txt")
         {
         }
 

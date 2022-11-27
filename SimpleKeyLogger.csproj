@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmailSender\LoggerEmailSender.cs" />
     <Compile Include="FileAdapters\FileAdapter.cs" />
     <Compile Include="FileAdapters\TextFileAdapter.cs" />
     <Compile Include="Models\AppConfig.cs" />
