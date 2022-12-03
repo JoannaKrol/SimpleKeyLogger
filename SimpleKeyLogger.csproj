@@ -50,8 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EmailSender\LoggerEmailSender.cs" />
-    <Compile Include="FileAdapters\FileAdapter.cs" />
     <Compile Include="FileAdapters\TextFileAdapter.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Models\AppConfig.cs" />
     <Compile Include="Models\SenderConfiguration.cs" />
     <Compile Include="Models\ServerConfiguration.cs" />
